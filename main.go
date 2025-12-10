@@ -5,7 +5,7 @@ import "fmt"
 //This is comment
 func main() {
 
-	//Multilple variable
+	//With keyword datatype
 	fmt.Println("***Multiple variable with initial value***")
 	var a, b, c int = 1, 2, 3
 	fmt.Println(a, b, c)
@@ -18,7 +18,15 @@ func main() {
 
 	fmt.Println("******************************************")
 
-	r ,d := 34, "Panpan"
-	fmt.Println(r,d)
+	r, d := 34, "Panpan"
+	fmt.Println(r, d)
 
+	//Variable declartion in a block
+
+	var (
+		cat1    string = "Panpan"
+		cat1Age = 3
+		sound   string = "Meow"
+	)
+	fmt.Println(cat1, cat1Age, sound)
 }
