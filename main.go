@@ -40,4 +40,13 @@ func main() {
 
 	fmt.Println(piValue)
 	fmt.Println(pivalue2)
+
+	//Using declaration of constant in a block
+	const (
+		username = "Jerald"
+		ign      = "BSCSJIRO"
+		program  = "BSCS"
+	)
+
+	fmt.Println(username, ign, program)
 }
