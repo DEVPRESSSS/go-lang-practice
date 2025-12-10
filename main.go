@@ -25,8 +25,19 @@ func main() {
 
 	var (
 		cat1    string = "Panpan"
-		cat1Age = 3
+		cat1Age        = 3
 		sound   string = "Meow"
 	)
 	fmt.Println(cat1, cat1Age, sound)
+
+	fmt.Println("*****************PI Value************************")
+
+	//This is the typed constant
+	const piValue float32 = 3.14
+
+	//Untyped constants
+	const pivalue2 = 3.14
+
+	fmt.Println(piValue)
+	fmt.Println(pivalue2)
 }
