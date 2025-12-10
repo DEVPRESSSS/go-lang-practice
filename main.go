@@ -4,17 +4,16 @@ import "fmt"
 
 //This is comment
 func main() {
+	//Create a slice from an array
+	myarray := [6]int{1, 2, 3, 4, 5, 6}
+	myslice := myarray[0:3]
+	fmt.Println(myslice)
+	fmt.Println(cap(myslice))
 
-	//Create slice with [] datatype {values}
-	first_slice := []string{"Hello"}
-	fmt.Println(first_slice)
+	//Using make function
+	fmt.Println("********Using make()**********")
+	myslice1 := make([]int, 4, 6)
+	fmt.Println(len(myslice1))
+	fmt.Println(cap(myslice1))
 
-	//Get the length and capacity of the slice
-	fmt.Println(len(first_slice))
-	fmt.Println(cap(first_slice))
-
-	myslice2 := []string{"Go", "Slices", "Are", "Powerful"}
-	fmt.Println(len(myslice2))
-	fmt.Println(cap(myslice2))
-	fmt.Println(myslice2)
 }
