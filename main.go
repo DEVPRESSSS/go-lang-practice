@@ -5,31 +5,16 @@ import "fmt"
 //This is comment
 func main() {
 
-	//Two types of declaring an array
-	//length is defined here
-	var array1 = [3]string{"Jerald", "Montemor", "BSCSJIRO"}
-	fmt.Println(array1)
-	//Second way
-	var array2 = [...]string{"Jerald", "Montemor", "BSCSJIRO"}
-	fmt.Println(array2)
+	//Create slice with [] datatype {values}
+	first_slice := []string{"Hello"}
+	fmt.Println(first_slice)
 
-	array3 := [4]string{"Jerald", "Montemor", "BSCSJIRO"}
-	fmt.Println((array3))
+	//Get the length and capacity of the slice
+	fmt.Println(len(first_slice))
+	fmt.Println(cap(first_slice))
 
-	//Change the index 1 "Montemor" to "Panpan"
-	array3[1] = "Panpan"
-	fmt.Println(array3)
-
-	//Array initialization
-	var cars = [3]string{"Volvo", "Honda"}
-	var cars1 = [3]string{}
-	var cars2 = [3]string{"Volvo", "Honda", "Test"}
-
-	fmt.Println(cars, cars1, cars2)
-
-	//Iniliaze only specific index value
-
-	agents := [5]string{1: "SANTIAGO5", 4: "SANTIAGO6"}
-	fmt.Println(agents)
-
+	myslice2 := []string{"Go", "Slices", "Are", "Powerful"}
+	fmt.Println(len(myslice2))
+	fmt.Println(cap(myslice2))
+	fmt.Println(myslice2)
 }
