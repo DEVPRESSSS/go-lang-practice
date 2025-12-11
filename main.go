@@ -4,30 +4,29 @@ import (
 	"fmt"
 )
 
-func addition(x int, c int) int {
-
-	return x + c
-
+type Flyer interface {
+	fly() string
 }
 
-func subtraction(x int, c int) (result int) {
-	result = x - c
-
-	return
-
+type Walker interface {
+	walk() string
 }
 
-func multiplication(x int, c int) (result int, message string) {
-
-	result = x * c
-	message = "This is return type string"
-	return
+type Bird struct {
+	Name string
 }
 
-// This is comment
+func (b *Bird) fly() string {
+	return "Flying..."
+}
+
+func (b *Bird) walk() string {
+	return "Walking..."
+}
+
 func main() {
+	var b = Bird{"Chirper"}
 
-	fmt.Println(addition(1, 2))
-	fmt.Println(subtraction(10, 4))
-	fmt.Println(multiplication(3, 3))
+	fmt.Println(b.fly())  // Flying...
+	fmt.Println(b.walk()) // Walking...
 }
